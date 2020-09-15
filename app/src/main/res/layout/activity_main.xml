@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kingapawlowska.skanujkod.MainActivity"
+    android:background="@color/background_mainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_scan"
+        android:onClick="onClick"
+        android:layout_gravity="center"
+        android:textSize="@dimen/button_scan"
+        android:id="@+id/button_scan"
+        android:layout_below="@+id/textView_description"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/button_scan"
+        android:layout_marginTop="@dimen/divider"
+        android:id="@+id/divider" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_main_description"
+        android:textSize="@dimen/textView_description"
+        android:id="@+id/textView_description"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/textColorWhite"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/textView_database_title"
+        android:id="@+id/textView_database_title"
+        android:layout_below="@+id/divider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/textView_database_title_marginTop"
+        android:textColor="@color/textColorWhite"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView_mainSearch"
+        android:layout_below="@+id/tableLayoutButtons"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/scrollView_mainSearch_marginTop">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_main_search"
+            android:textColor="@color/textColorWhite"/>
+
+    </ScrollView>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_database_title"
+        android:id="@+id/tableLayoutButtons"
+        android:layout_centerHorizontal="true">
+
+        <TableRow>
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_showSearch"
+                android:id="@+id/button_showSearch"
+                android:onClick="showAll"
+                android:textSize="@dimen/button_showSearch"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_HideSearch"
+                android:id="@+id/button_HideSearch"
+                android:onClick="hideAll"
+                android:textSize="@dimen/button_HideSearch" />
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

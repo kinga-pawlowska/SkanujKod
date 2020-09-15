@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SkanujKod</string>
+    <string name="textview_main_description">Kliknij na przycisk poniżej, żeby zeskanować kod</string>
+    <string name="button_scan">SKANUJ</string>
+    <string name="textView_database_title">BAZA DANYCH WYSZUKAŃ:</string>
+    <string name="button_showSearch">Pokaż wyszukania</string>
+    <string name="button_HideSearch">Schowaj wyszukania</string>
+    <string name="dialog_dialogButtonClose">Wróć</string>
+    <string name="dialog_dialogButtonSearch">Szukaj w google</string>
+    <string name="dialog_dialogButtonWWW">Otwórz www</string>
+</resources>

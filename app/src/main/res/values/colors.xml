@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#202020</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="title_dialog">#008608</color>
+    <color name="background_mainActivity">#353535</color>
+    <color name="textColorWhite">#ffffff</color>
+</resources>
