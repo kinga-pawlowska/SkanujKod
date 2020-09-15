@@ -1,1 +1,2 @@
-"# SkanujKod" 
+# SkanujKod
+Qr and barcode scanner
